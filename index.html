@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="EasyLoan Finance, Loan Consultant, Business Loan, Annasaheb Scheme, Personal Loan, Machinery Finance, Startup Loans, Government Subsidy, Pune Loan Services, MSME Loans, PMEGP, Loan Agent Pune, Machinery Loan, Vehicle Loan">
+  <meta name="author" content="Abhay Patil - EasyLoan Finance">
+  <title>EasyLoan Finance | Trusted Loan Consultant - Fast Approvals & Government Schemes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(45deg, #FF5733, #FFC300);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      height: 70px;
+    }
+    .nav-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .call-now {
+      background: #FFB703;
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1573164574511-73c773193279?fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: #FFB703;
+      color: #000;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #ffa500;
+    }
+    section {
+      padding: 4rem 10%;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #002D62;
+    }
+    .about p {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+    .services ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .services li {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .services li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .contact-info {
+      background-color: #eef3f8;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+    .contact-info a,
+    .contact-info strong,
+    .contact-info i {
+      color: #0b3d91;
+    }
+    iframe {
+      display: block;
+      margin: 2rem auto;
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+    }
+    footer {
+      background: #1F2937;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .whatsapp-chat {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .whatsapp-chat img {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .whatsapp-chat img:hover {
+      transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #1F2937;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-toggle {
+        display: block;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="EasyLoan Finance Logo">
+    </div>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      <li><a href="tel:9881346662" class="call-now">Call: 98813 46662</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Fast & Easy Loan Approvals</h1>
+    <p>Your trusted partner for business, personal, and subsidy loans</p>
+    <a href="#contact" class="btn">Contact Us</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>We guide and consult in Loan proposals and Subsidies of Government Entities, PSU Banks, Pvt. Sector Banks, NBFCs, and Co.op Banks.</p>
+  <p style="text-align:left; max-width:700px; margin:auto;">
+    <strong>1. Consultant:</strong> Abhay Patil<br>
+    <strong>2. Call:</strong> <a href="tel:9881346662">98813 46662</a> / <a href="tel:7796801956">77968 01956</a><br>
+    <strong>3. Office Address:</strong> D13, Shop World of Mother Complex, Akhurdi Nigdi, Nr. Angan Hotel, Pin 411035<br>
+    <strong>4. Map Location:</strong> <a href="https://www.google.com/maps/place/D13+shop+world+of+mother+complex+Akurdi+Nigdi/@18.6562,73.7621,17z" target="_blank">View on Google Maps</a><br>
+    <strong>5. Special Scheme:</strong> Annasaheb Vikas Mahamandal - 12% Interest Return / आण्णासाहेब विकास महामंडळ मध्ये 12% व्याजदर परत भेटते
+  </p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Mudra Loan</li>
+    <li>CGTMSE Finance</li>
+    <li>Machinery Finance</li>
+    <li>Start-up Loans</li>
+    <li>Project Finance</li>
+    <li>Cash Credit & Overdraft</li>
+    <li>Hospital and Construction Finance</li>
+    <li>Mortgage & Home Loans</li>
+    <li>New/Used Vehicle Loan</li>
+    <li>Working Capital Loan</li>
+    <li>SIDBI Subsidies</li>
+    <li>Refinance & Rented Cases</li>
+    <li>PMEGP Loan Yojana (25-35% Subsidy) 100% Guarantee</li>
+    <li>Subsidy on all types of Business and service sector</li>
+    <li>Old Vehicle Loan (4-Wheeler & Long Vehicle)</li>
+    <li>Plant & Machinery (New Purchase)</li>
+    <li>Startup Loan (Rented & Own Cases)</li>
+    <li>Refinancing on Machines</li>
+    <li>LTV: Highest Upto 100%</li>
+  </ul>
+  <div style="text-align:center; margin-top: 2rem;">
+    <a href="https://drive.google.com/file/d/1cBIv-oiezRX7Knx1rP1rEO91ZrAWO6XZ/view?usp=sharing" target="_blank" class="btn">View More Service</a>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p><i class="fas fa-user"></i> <strong>Consultant:</strong> Abhay Patil</p>
+    <p><i class="fas fa-phone"></i> <strong>Call:</strong> <a href="tel:9881346662">98813 46662</a> / <a href="tel:7796801956">77968 01956</a></p>
+    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> D13 Shop, World of Mother Complex, Akurdi Nigdi, Nr. Angan Hotel, Pune 411035</p>
+    <p><i class="fas fa-map"></i> <a href="https://www.google.com/maps?q=World+of+Mother+Complex,+Akurdi+Nigdi,+Pune" target="_blank">View on Google Maps</a></p>
+    <p><i class="fas fa-star"></i> <strong>Special Scheme:</strong> Annasaheb Vikas Mahamandal - 12% Interest Return / आण्णासाहेब विकास महामंडळ - 12% व्याजदर परत भेटे</p>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.419962912555!2d73.76155671421036!3d18.5536957873901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9466c32a0d7%3A0xcdfb2cc450684b28!2sWorld%20of%20Mother%20Complex!5e0!3m2!1sen!2sin!4v1616832265096!5m2!1sen!2sin"></iframe>
+</section>
+
+<div class="whatsapp-chat">
+  <a href="https://wa.me/919881346662?text=Hello!%20I%20am%20interested%20in%20a%20loan.%20Please%20help%20me." target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+  </a>
+</div>
+
+<footer>
+  <p>&copy; 2025 Abhay Patil EasyLoan Finance. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('active');
+  }
+  function closeMenu() {
+    document.getElementById('nav-links').classList.remove('active');
+  }
+</script>
+</body>
+</html>
